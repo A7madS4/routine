@@ -1,0 +1,30 @@
+body {
+    background-image: url("https://64.media.tumblr.com/2856880d18aac7e98aa6b6ee5c03e8e4/tumblr_p5hd1poXyM1uuzayro1_1280.gifv");
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 400px;
+    border-radius: 0.4rem;
+    margin: 10px;
+}
+
+.done-input {
+    width: 38px;
+    height: 38px;
+    margin: 0;
+}
+
+.task-input {
+    width: 132.8px !important;
+    margin-right: 10px;
+}
+
+td {
+    width: 132.8px;
+}
+
+input {
+    background-color: rgba(204, 255, 227, 0.8) !important;
+    border-color: var(--bs-green) !important;
+}

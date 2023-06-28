@@ -1,23 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
 </head>
 
-<body>
-    <div id="result">
+<body style="font-family: 'Cairo', sans-serif;">
+    <form action="" style="align-items: center; justify-content: center; display: flex;">
+        <table style="width: 400px; text-align: center;">
+            <thead>
+                    <tr style="color: white; font-size: 20px;">
+                        <th style="width: 132.8px; ">
+                            الوقت
+                        </th>
+                        <th style="width: 132.8px;">
+                            المهمة
+                        </th>
+                        <th style="width: 38px;">
+                            تم
+                        </th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time1">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp1">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done1">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time2">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp2">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done2">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time3">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp3">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done3">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time4">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp4">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done4">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time5">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp5">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done5">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time6">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp6">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done6">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time7">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp7">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done7">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time8">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp8">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done8">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time9">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp9">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done9">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time10">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp10">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done10">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time11">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp11">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done11">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time12">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp12">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done12">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time13">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp13">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done13">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time14">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp14">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done14">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time15">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp15">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done15">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time16">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp16">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done16">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time17">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp17">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done17">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time18">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp18">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done18">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time19">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp19">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done19">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time20">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp20">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done20">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time21">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp21">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done21">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time22">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp22">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done22">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time23">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp23">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done23">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time24">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp24">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done24">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time25">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp25">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done25">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time26">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp26">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done26">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time27">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp27">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done27">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time28">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp28">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done28">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time29">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp29">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done29">
+                    </td>
+                </tr>
+                <tr class="my-2">
+                    <td>
+                        <input type="time" class="form-control task-input" id="time30">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control task-input" id="inp30">
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input done-input" id="done30">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-success" id="submit"
+                            style="width: 132.8px; margin-right: 10px;">Save</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="" class="btn btn-danger" id="submit" onclick="localStorage.clear()"
+                            style="width: 132.8px; margin-right: 10px;">Clear</button></td>
+                    <td></td>
 
-    </div>
-    <form action="">
-        <input type="time" id="time1">
-        <input type="text" id="inp1">
-        <button type="submit" id="submit">Save</button>
-    </form>
+                </tr>
+            </tbody>
+        </table>
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
